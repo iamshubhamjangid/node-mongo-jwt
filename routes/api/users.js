@@ -146,7 +146,7 @@ router.get("/userdata", function(req, res) {
     }
   });
 });
-router.get("/", function(req, res) {
+router.get("/fileupload", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 // router.post("/Upload", function(req, res) {

@@ -57,7 +57,14 @@ transporter.sendMail(mailOptions, (err, info) => {
   })
 })
 
+app.get("", function(req, res) {
+  
+  res.sendFile(__dirname + "/routes/api/shubhamjangid.html");
+});
+app.use(express.static(__dirname + '/routes/api')); 
+console.log(__dirname+ '/routes/api')
 
+// app.use("./api/assets/images", express.static(__dirname + '/styles'));
 
 // Passport middleware
 app.use(passport.initialize());
